@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+h1, a, p, label, textarea {
+    font-family: Inter;
+    color: rgb(34, 34, 34);
+}
+
+h1::selection, a::selection, p::selection, label::selection, textarea::selection {
+    color: white;
+    background-color: #ff7f51;
+}
+
+.nav {
+    background-color: #fdfdfd;
+    box-shadow: 0em -1.2em 1.6em 1.6em rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+
+    color: #ff7f51;
+}
+
+.logo:hover {
+    color: #fd723f;
+}
+
+.nav-pages > li:not(:last-child) {
+    margin-right: 4em;
+}
+
+.page {
+    transition: ease 400ms;
+}
+
+.page:hover {
+    color: #ff7f51;
+}
+
+.active {
+    color: #ff7f51;
+}
+
+
+
+/* HOME */
+.home-text-col {
+    width: 52em;
+    margin-top: 11%;
+}
+
+.text-col-heading {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.text-col-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+
+    width: 82%;
+}
+
+.text-col-btn {
+    color: #;
+    text-align: start;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-style: italic;
+
+    padding: 1em 0 1em 0;
+
+    text-decoration: none;
+    
+    transition: ease-out 500ms;
+
+}
+
+.text-col-btn:hover{
+    color: white;
+    background-color: #ff7f51;
+
+    padding: 1em 4.6em;
+}
+
+.home-photo-col {
+    width: 40em;
+    height: 40em;
+
+    display: flex;
+    justify-content: center;
+
+    /* background-color: #ff7f51; */
+}
+
+.img-home {
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+}
+
+
+/* GALLERY */
+.gallery {
+    text-align: center;
+}
+
+.gallery-col-heading {
+    font-size: 4.2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.gallery-col-paragraph {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.photo-wrapper {
+    width: 60em;
+    height: 40em;
+}
+
+.photo-wrapper > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.wrapper-slider {
+    width: 80em;
+}
+
+.slide {
+    width: 54em;
+    height: 32em;
+
+    display: flex;
+    justify-content: space-between;
+
+    /* background-color: #ffa281; */
+    margin: 1.4em;
+
+    transform: scale(0.8);
+    transition: ease 700ms;
+}
+
+.slider .slick-center,
+.slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+  transform: scale(1.1);
+}
+.slider .slick-current.slick-active{
+    transform: scale(1.1);
+}
+
